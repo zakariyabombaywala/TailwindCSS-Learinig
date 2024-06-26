@@ -10,7 +10,7 @@
     <!-- Navbar -->
     <nav class="relative container mx-auto p-6">
       <!-- Flex container -->
-      <div class="flex justify-between items-center">
+      <div class="flex justify-between">
         <!-- Logo -->
         <div class="pt-2">
           <img src="images/logo.svg" alt="logo" />
@@ -29,6 +29,30 @@
           class="hidden p-3 px-6 pt-2 text-white bg-brightRed baseline hover:bg-brightRedLight rounded-full md:block"
           >Get Started</a
         >
+
+        <!-- Hamburger Icon -->
+        <button
+          id="menu-btn"
+          class="block hamburger md:hidden focus:outline-none"
+        >
+          <span class="hamburger-top"></span>
+          <span class="hamburger-middle"></span>
+          <span class="hamburger-bottom"></span>
+        </button>
+      </div>
+
+      <!-- Mobile Menu -->
+      <div class="md:hidden">
+        <div
+          id="menu"
+          class="hidden absolute flex-col items-center self-end py-8 mt-10 space-y-6 font-bold bg-white left-6 right-6 drop-shadow-md sm:w-auto sm:self-center"
+        >
+          <a href="#">Pricing</a>
+          <a href="#">Product</a>
+          <a href="#">About Us</a>
+          <a href="#">Careers</a>
+          <a href="#">Community</a>
+        </div>
       </div>
     </nav>
 
@@ -269,6 +293,9 @@
         <div
           class="flex flex-col-reverse items-center justify-between space-y-12 md:flex-col md:space-y-0 md:items-start"
         >
+          <div class="mx-auto my-6 text-center text-white md:hidden">
+            Copyright &copy; 2024, All Right Reserved
+          </div>
           <!-- Logo -->
           <div>
             <img src="images/logo.svg" class="h-8" alt="" />
@@ -297,7 +324,45 @@
             </a>
           </div>
         </div>
+        <!-- List Container -->
+        <div class="flex justify-around space-x-32">
+          <div class="flex flex-col space-y-3 text-white">
+            <a href="#" class="hover:text-brightRed">Home</a>
+            <a href="#" class="hover:text-brightRed">Pricing</a>
+            <a href="#" class="hover:text-brightRed">Product</a>
+            <a href="#" class="hover:text-brightRed">About</a>
+          </div>
+          <div class="flex flex-col space-y-3 text-white">
+            <a href="#" class="hover:text-brightRed">Careers</a>
+            <a href="#" class="hover:text-brightRed">Community</a>
+            <a href="#" class="hover:text-brightRed">Privacy Policy</a>
+          </div>
+        </div>
+
+        <!-- Input Container -->
+        <div class="flex flex-col justify-between">
+          <form>
+            <div class="flex space-x-3">
+              <input
+                type="text"
+                class="flex-1 px-4 rounded-full focus:outline-none"
+                placeholder="update in your inbox"
+              />
+              <button
+                class="px-6 py-2 text-white rounded-full bg-brightRed hover:bg-brightRedLight focus:outline-none"
+              >
+                Go
+              </button>
+            </div>
+          </form>
+          <div class="hidden text-white md:block">
+            Copyright &copy; 2024, All Right Reserved
+          </div>
+        </div>
       </div>
     </footer>
+
+    <!-- javascript -->
+    <script src="js/app.js"></script>
   </body>
 </html>
